@@ -1,0 +1,34 @@
+<div class="filter">
+    <div class="filterbox">
+        <label for="range1">All</label>
+        <input type="radio" name="range" id="range1" value="all" 
+        [(ngModel)]="selectedCategory"
+        (change)="filterCategories()">   
+    </div>
+    <div class="filterbox">
+        <label for="range2">Beauty</label>
+        <input type="radio" name="range" id="range2" value="beauty" 
+        [(ngModel)]="selectedCategory"
+        (change)="filterCategories()">  
+    </div>
+    <div class="filterbox">
+        <label for="range3">Fragrances</label>
+        <input type="radio" name="range" id="range3" value="fragrances" 
+        [(ngModel)]="selectedCategory"
+        (change)="filterCategories()">  
+    </div>
+    <div class="filterbox">
+        <label for="range4">Groceries</label>
+        <input type="radio" name="range" id="range4" value="groceries" 
+        [(ngModel)]="selectedCategory"
+        (change)="filterCategories()">   
+    </div>
+    <div class="filterbox">
+        <label for="range5">Furniture</label>
+        <input type="radio" name="range" id="range5" value="furniture" 
+        [(ngModel)]="selectedCategory"
+        (change)="filterCategories()">   
+    </div>
+</div>
+
+

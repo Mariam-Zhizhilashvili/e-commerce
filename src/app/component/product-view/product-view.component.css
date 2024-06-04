@@ -1,0 +1,129 @@
+
+.container-fluid {
+    background-color: #348ba8;
+    padding: 20px;
+    padding-bottom: 20%;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    /* background: linear-gradient(156deg, rgba(190, 167, 155, 1) 5%, rgba(207, 215, 227, 1) 61%, rgba(218, 221, 190, 1) 87%); */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover .card-img {
+    transform: scale(1.1);
+}
+.card-body.bg-light {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.card-body.bg-light h6 a {
+    color: #343a40;
+    text-decoration: none;
+    font-size: medium;
+    transition: color 0.2s ease-in-out;
+}
+
+.card-body.bg-light h6 a:hover {
+    color: #007bff;
+}
+
+.card-body.bg-light h3 {
+    color: #28a745;
+    font-size: 1.5rem;
+}
+
+.card-body.bg-light .btn {
+    border-radius: 50px;
+    font-size: 0.875rem;
+}
+
+.card-body.bg-light .btn-dark {
+    background-color: #cbe5f7;
+    border-color: #ffffff;
+    color: #00050a;
+}
+
+.card-body.bg-light .btn-dark:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+    color: #ffffff;
+}
+
+.card-body.bg-light .btn-warning {
+    background-color: #e3cc84;
+    border-color: #efd78d;
+    color: #ffffff;
+    border-radius: 50px;
+}
+
+.card-body.bg-light .btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+.card-body.bg-light .btn-danger {
+    background-color: #f1b6bc;
+    border-color: #f1b6bc;
+    color: #ffffff;
+    border-radius: 50px;
+}
+
+.card-body.bg-light .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+    color: #ffffff;
+}
+
+@media (max-width: 767px) {
+    .card {
+        margin-bottom: 20px;
+    }
+    .col-md-2 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-2 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .col-md-2 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-md-2 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}

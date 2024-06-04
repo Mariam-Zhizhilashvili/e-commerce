@@ -1,0 +1,55 @@
+
+.filter {
+    width: 800px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filterbox {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.2s;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.filterbox input[type="radio"] {
+    display: none;
+}
+
+.filterbox:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+.filterbox label {
+    margin: 0;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .filter {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .filterbox {
+        flex: 1 1 auto;
+        width: 50%;
+        margin: 5px 0; 
+        text-align: center;
+    }
+}

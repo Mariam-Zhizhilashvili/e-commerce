@@ -1,0 +1,183 @@
+.logo {
+    width: 15%;
+    height: 10%;
+}
+
+.home-container {
+    width: 100%;
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navigation-header {
+    top: 0;
+    width: 100%;
+    display: flex;
+    z-index: 100;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation-max-width {
+    width: 100%;
+    display: flex;
+    max-width: 1158px;
+    align-items: center;
+    padding-top: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 32px;
+    justify-content: space-between;
+}
+
+img {
+    display: block;
+    width: 100px;
+    height: 50px;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.navigation-nav {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+nav {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.navigation-links-nav {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.navigation-links-text {
+    color: #ffc220;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.Navigation-Link:hover{
+    color: #ffc220;
+}
+.Navigation-Link {
+    font-size: 16px;
+    font-style: normal;
+    font-family: IBM Plex Sans Condensed;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navigation-links-text1 {
+    color: #ffc220;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 41px;
+}
+
+.navigation-links-text2 {
+    color: #ffc220;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 41px;
+}
+
+.navigation-register {
+    color: #0d1f3aff;
+    margin-left: 41px;
+    background-color: #FFFFFF;
+}
+
+.button-md {
+    padding-top: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+}
+.button-primary {
+    color: #FFFFFF;
+    cursor: pointer;
+    font-style: normal;
+    transition: 0.3s;
+    font-weight: 600;
+    line-height: 1;
+    border-color: transparent;
+    text-transform: uppercase;
+    background-color: #0975f1ff;
+}
+.button {
+    color: #0f1722ff;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-color: #0f1722ff;
+    border-width: 0px;
+    border-radius: 0px;
+    background-color: #FFFFFF;
+}
+
+button, select {
+    text-transform: none;
+}
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+button {
+    background-color: transparent;
+}
+
+.home-btns-container {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: flex-start;
+}
+
+.button-lg {
+    padding-top: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 20px;
+}
+.home-primary {
+    margin-right: 24px;
+}
+.button-lg-border {
+    padding-top: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 18px;
+}
+.button-outline {
+    color: #0d1f3aff;
+    cursor: pointer;
+    font-style: normal;
+    transition: 0.3s;
+    font-weight: 600;
+    line-height: 1;
+    border-color: #0d1f3aff;
+    border-width: 2px !important;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+.button:hover {
+    background-color: #ffc220;
+}

@@ -1,0 +1,62 @@
+ <div class="container">
+        <div class="single-product">
+            <div class="row">
+                <div class="col-6">
+                    <div class="product-image">
+                        <div class="product-image-main">
+                            <img src="{{productdata?.images[0]}}" alt="" id="product-main-image">
+                        </div>
+                        <div class="product-image-slider">
+                            <img src="{{productdata?.images[0]}}" alt=""  class="image-list">
+                            <img src="{{productdata?.images[0]}}" alt=""  class="image-list">
+                            <img src="{{productdata?.images[0]}}" alt=""  class="image-list">
+                            <img src="{{productdata?.images[0]}}" alt=""  class="image-list">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="breadcrumb">
+                        <span><a href="#">Home</a></span>
+                        <span><a href="#">Product</a></span>
+                        <span class="active">{{productdata?.category}}</span>
+                    </div>
+
+                    <div class="product">
+                        <div class="product-title">
+                            <h2>{{productdata?.title}}</h2>
+                        </div>
+                        <div class="product-rating">
+                            <span><i class="bx bxs-star"></i></span>
+                            <span><i class="bx bxs-star"></i></span>
+                            <span><i class="bx bxs-star"></i></span>
+                            <span><i class="bx bxs-star"></i></span>
+                            <span><i class="bx bxs-star"></i></span>
+                            <span style="color:rgb(140, 140, 37)" class="review">({{productdata?.rating}} Review)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="offer-price">$ {{productdata?.price}}</span>
+                            <span style="color:green" class="sale-price">Discount: {{productdata?.discountPercentage}} %</span>
+                        </div>
+
+                        <div class="product-details">
+                            <h3>Description</h3>
+                            <p>{{productdata?.description}}</p>
+                            <button routerLink="/product-view" class="btn btn-warning text-light mt-2">Back</button>
+                        </div>
+                        
+                        <span class="divider"></span>
+
+                        <div class="product-btn-group">
+                            <div (click)="addtocart(productdata)"  routerLink="/cart-page" class="button buy-now"><i class='bx bxs-zap' ></i> Buy Now</div>
+                            <div (click)="addtocart(productdata)" *ngIf="showadd" class="button add-cart"><i class='bx bxs-cart' ></i> Add to Cart</div>
+                            <div (click)="removeitem(productdata)" *ngIf="showremove" class="button heart"><i class='bx bxs-heart' ></i> Remove Item</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-footer></app-footer>
+    
+    

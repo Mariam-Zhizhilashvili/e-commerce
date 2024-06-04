@@ -1,0 +1,301 @@
+<div class="home-container">
+  <header data-role="Header" class="navigation-header">
+    <div class="navigation-max-width">
+      <img class="logo" alt="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Walmart_logo.svg/2560px-Walmart_logo.svg.png" />
+      
+      <button class="burger-menu" (click)="toggleMenu()">
+        &#9776;
+      </button>
+      
+      <div class="navigation-nav" [class.open]="menuOpen">
+        <nav class="navigation-links-nav navigation-links-root-class-name17">
+          <span class="navigation-links-text Navigation-Link">
+            <span routerLink="/aboutus">About Us</span>
+          </span>
+          <span class="navigation-links-text1 Navigation-Link">
+            <span routerLink="/product-view">Products</span>
+          </span>
+          <span class="navigation-links-text2 Navigation-Link">
+            <span routerLink="/contact">Contact</span>
+          </span>
+        </nav>
+
+        <div *ngIf="!user">
+          <button routerLink="/login" class="navigation-register button-primary button button-md">
+            <span>Log In</span>
+          </button>
+        </div>
+        <div *ngIf="user">
+          
+            <h6>Welcome, {{ user.username }}!<i class="fa-solid fa-user"></i></h6>
+          
+          <button (click)="logout()" class="navigation-register button-primary button button-md">
+            <span>Log Out</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+    
+
+    <main class="home-main">
+        <div class="home-hero section-container">
+          <div class="home-max-width max-content-container">
+            <div class="home-content-container">
+              <h1 class="home-text Heading1">
+                <span>Always Low Prices,</span>
+                <span class="home-text02">Save Money&nbsp;</span>
+                <span>Live Better</span>
+              </h1>
+              <span class="home-text04">
+                <span>
+                  To become the best at delivering value to our customers,
+                </span>
+                <br />
+                <span>to learn how to sell for less, and to provide the best customer service possible.</span>
+              </span>
+              <div class="home-btns-container">
+                <button routerLink="/aboutus" class="home-primary button-primary button-lg button">
+                  learn more
+                </button>
+                <button routerLink="/contact" class="button button-outline button-lg-border">
+                  Contact Us
+                </button>
+              </div>
+            </div>
+
+            <div class="home-video-container">
+                <img src="https://s3.amazonaws.com/www-inside-design/uploads/2018/04/walmart-square-1024x1024.jpg">
+              </div>
+            </div>
+            <div class="home-blue-background"></div>
+          </div>
+
+          <div class="home-sponsors section-container">
+            <div class="home-max-width1 max-content-container">
+              <span class="home-text07">proudly sponsored by</span>
+              <div class="home-container1">
+                <img
+                  alt="image"
+                  src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg"
+                  class="home-image1"
+                />
+                <img
+                  alt="image"
+                  src="https://cdn.mos.cms.futurecdn.net/786NzPhpXo6G8hkutJkHTM-1200-80.jpg"
+                  class="home-image1"
+                />
+                <img
+                  alt="image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjkNJrsObHKxq42eTxB-0xvqg1rXPydQ1Ifw&s"
+                  class="home-image2"
+                />
+                <img
+                  alt="image"
+                  src="https://logos-world.net/wp-content/uploads/2020/05/Calvin-Klein-Logo.jpg"
+                  class="home-image3"
+                />
+                <img
+                  alt="image"
+                  src="https://static.toiimg.com/thumb/msid-106616095,width-400,resizemode-4/106616095.jpg"
+                  class="home-image4"
+                />
+                <img
+                  alt="image"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUhGAVLmhvSTDAUecfqeOCwcpDyIPUa1j5PA&s"
+                  class="home-image5"
+                />
+              </div>
+            </div>
+          </div>
+
+
+
+          
+
+          
+    </main>
+    
+</div>
+
+
+
+<div class="home-speakers section-container">
+  <div class="home-max-width2 max-content-container">
+    <div class="home-heading-container">
+      <span class="home-text08">
+        The highest quality products
+      </span>
+      <h1 class="home-text09 Heading2">New collection</h1>
+    </div>
+    <div class="home-speakers-container">
+      <div class="speaker-card-speaker-card">
+        <div class="speaker-card-image-container">
+          <img
+            alt="image"
+            src="https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png"
+            class="speaker-card-image"
+          />
+          <div class="speaker-card-read-more-container">
+            <span class="speaker-card-hint">read more</span>
+            <svg viewBox="0 0 1024 1024" class="speaker-card-icon">
+              <path
+                d="M621.254 877.254l320-320c24.994-24.992 24.994-65.516 0-90.51l-320-320c-24.994-24.992-65.516-24.992-90.51 0-24.994 24.994-24.994 65.516 0 90.51l210.746 210.746h-613.49c-35.346 0-64 28.654-64 64s28.654 64 64 64h613.49l-210.746 210.746c-12.496 12.496-18.744 28.876-18.744 45.254s6.248 32.758 18.744 45.254c24.994 24.994 65.516 24.994 90.51 0z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <span class="speaker-card-first-name">
+          <span>beauty</span>
+        </span>
+        <span class="speaker-card-last-name"><span>$ 19.99</span></span>
+        
+      </div>
+      <div class="speaker-card-speaker-card">
+        <div class="speaker-card-image-container">
+          <img
+            alt="image"
+            src="https://cdn.dummyjson.com/products/images/beauty/Powder%20Canister/thumbnail.png"
+            class="speaker-card-image"
+          />
+          <div class="speaker-card-read-more-container">
+            <span class="speaker-card-hint">read more</span>
+            <svg viewBox="0 0 1024 1024" class="speaker-card-icon">
+              <path
+                d="M621.254 877.254l320-320c24.994-24.992 24.994-65.516 0-90.51l-320-320c-24.994-24.992-65.516-24.992-90.51 0-24.994 24.994-24.994 65.516 0 90.51l210.746 210.746h-613.49c-35.346 0-64 28.654-64 64s28.654 64 64 64h613.49l-210.746 210.746c-12.496 12.496-18.744 28.876-18.744 45.254s6.248 32.758 18.744 45.254c24.994 24.994 65.516 24.994 90.51 0z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <span class="speaker-card-first-name">
+          <span>beauty</span>
+        </span>
+        <span class="speaker-card-last-name">
+          <span>$ 14.99</span>
+        </span>
+      </div>
+      <div class="speaker-card-speaker-card">
+        <div class="speaker-card-image-container">
+          <img
+            alt="image"
+            src="https://cdn.dummyjson.com/products/images/beauty/Red%20Nail%20Polish/thumbnail.png"
+            class="speaker-card-image"
+          />
+          <div class="speaker-card-read-more-container">
+            <span class="speaker-card-hint">read more</span>
+            <svg viewBox="0 0 1024 1024" class="speaker-card-icon">
+              <path
+                d="M621.254 877.254l320-320c24.994-24.992 24.994-65.516 0-90.51l-320-320c-24.994-24.992-65.516-24.992-90.51 0-24.994 24.994-24.994 65.516 0 90.51l210.746 210.746h-613.49c-35.346 0-64 28.654-64 64s28.654 64 64 64h613.49l-210.746 210.746c-12.496 12.496-18.744 28.876-18.744 45.254s6.248 32.758 18.744 45.254c24.994 24.994 65.516 24.994 90.51 0z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <span class="speaker-card-first-name">
+          <span>beauty</span>
+        </span>
+        <span class="speaker-card-last-name">
+          <span>$ 8.99</span>
+        </span>
+      </div>
+      <div class="speaker-card-speaker-card">
+        <div class="speaker-card-image-container">
+          <img
+            alt="image"
+            src="https://cdn.dummyjson.com/products/images/beauty/Red%20Lipstick/thumbnail.png"
+            class="speaker-card-image"
+          />
+          <div class="speaker-card-read-more-container">
+            <span class="speaker-card-hint">read more</span>
+            <svg viewBox="0 0 1024 1024" class="speaker-card-icon">
+              <path
+                d="M621.254 877.254l320-320c24.994-24.992 24.994-65.516 0-90.51l-320-320c-24.994-24.992-65.516-24.992-90.51 0-24.994 24.994-24.994 65.516 0 90.51l210.746 210.746h-613.49c-35.346 0-64 28.654-64 64s28.654 64 64 64h613.49l-210.746 210.746c-12.496 12.496-18.744 28.876-18.744 45.254s6.248 32.758 18.744 45.254c24.994 24.994 65.516 24.994 90.51 0z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <span class="speaker-card-first-name">
+          <span>beauty</span>
+        </span>
+        <span class="speaker-card-last-name">
+          <span>$ 12.99</span>
+        </span>
+      </div>
+      <div class="speaker-card-speaker-card">
+        <div class="speaker-card-image-container">
+          <img
+            alt="image"
+            src="https://cdn.dummyjson.com/products/images/fragrances/Dior%20J'adore/thumbnail.png"
+            class="speaker-card-image"
+          />
+          <div class="speaker-card-read-more-container">
+            <span class="speaker-card-hint">read more</span>
+            <svg viewBox="0 0 1024 1024" class="speaker-card-icon">
+              <path
+                d="M621.254 877.254l320-320c24.994-24.992 24.994-65.516 0-90.51l-320-320c-24.994-24.992-65.516-24.992-90.51 0-24.994 24.994-24.994 65.516 0 90.51l210.746 210.746h-613.49c-35.346 0-64 28.654-64 64s28.654 64 64 64h613.49l-210.746 210.746c-12.496 12.496-18.744 28.876-18.744 45.254s6.248 32.758 18.744 45.254c24.994 24.994 65.516 24.994 90.51 0z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <span class="speaker-card-first-name">
+          <span>fragrances</span>
+        </span>
+        <span class="speaker-card-last-name"><span>$ 89.99</span></span>
+      </div>
+      <div class="speaker-card-speaker-card">
+        <div class="speaker-card-image-container">
+          <img
+            alt="image"
+            src="https://cdn.dummyjson.com/products/images/fragrances/Gucci%20Bloom%20Eau%20de/thumbnail.png"
+            class="speaker-card-image"
+          />
+        </div>
+        <span class="speaker-card-first-name"><span>fragrances</span></span>
+        <span class="speaker-card-last-name">
+          <span>$ 79.99</span>
+        </span>
+      </div>
+      <div class="speaker-card-speaker-card">
+        <div class="speaker-card-image-container">
+          <img
+            alt="image"
+            src="https://cdn.dummyjson.com/products/images/fragrances/Chanel%20Coco%20Noir%20Eau%20De/thumbnail.png"
+            class="speaker-card-image"
+          />
+        </div>
+        <span class="speaker-card-first-name">
+          <span>fragrances</span>
+        </span>
+        <span class="speaker-card-last-name"><span>$ 129.99</span></span>
+      </div>
+      <div class="speaker-card-speaker-card">
+        <div class="speaker-card-image-container">
+          <img
+            alt="image"
+            src="https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/thumbnail.png"
+            class="speaker-card-image"
+          />
+        </div>
+        <span class="speaker-card-first-name">
+          <span>beauty</span>
+        </span>
+        <span class="speaker-card-last-name"><span>$ 9.99</span></span>
+      </div>
+    </div>
+  </div><br><br>
+  <button class="button button-outline button-lg-border" routerLink="/product-view">
+    All Products
+  </button>
+</div>
+
+
+<app-footer></app-footer>
+<!-- <app-login></app-login> -->
+
+
+
+
+

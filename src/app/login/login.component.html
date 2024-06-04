@@ -1,0 +1,17 @@
+
+<div class="login-container">
+    <form class="login-form" (ngSubmit)="login()" #signInForm="ngForm">
+        <div class="form-group">
+            <label for="user">Username</label>
+            <input type="text" #userInput="ngModel" name="username" id="user" [(ngModel)]="client.user" required>
+            <div *ngIf="userInput.invalid && userInput.touched" class="error-message">
+                Please enter your Username
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="pwd">Password</label>
+            <input type="password" #pwdInput="ngModel" name="password" id="pwd" [(ngModel)]="client.pwd" required>
+        </div>
+        <button class="btn" type="submit" [disabled]="signInForm.form.invalid">Log in</button>
+    </form>
+</div>

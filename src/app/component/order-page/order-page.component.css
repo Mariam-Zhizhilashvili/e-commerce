@@ -1,0 +1,80 @@
+.order-card {
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+  }
+  
+  .order-circle {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background: #F8FAF5;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-check-icon {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .order-heading {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .order-thankyou {
+    font-size: 18px;
+    color: #555;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .order-amount {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .order-total {
+    color: blue;
+    font-weight: bold;
+  }
+  
+
+  @media (max-width: 600px) {
+    .order-card {
+      padding: 15px;
+      margin: 10px;
+    }
+  
+    .order-circle {
+      height: 150px;
+      width: 150px;
+    }
+  
+    .order-check-icon {
+      width: 75px;
+      height: 75px;
+    }
+  
+    .order-heading {
+      font-size: 20px;
+    }
+  
+    .order-thankyou {
+      font-size: 16px;
+    }
+  
+    .order-amount {
+      font-size: 14px;
+    }
+  }
+  
