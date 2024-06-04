@@ -15,7 +15,6 @@ import { FilterComponent } from './filter/filter.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
-import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { UserHomeDesignComponent } from './user-home-design/user-home-design.component';
 import { FormsModule } from '@angular/forms';
@@ -37,7 +36,6 @@ import { UserService } from './shared/user.service';
     AboutusComponent,
     ContactComponent,
     LoginComponent,
-    HomeComponent,
     NavbarComponent,
     UserHomeDesignComponent
   ],
